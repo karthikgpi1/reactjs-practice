@@ -9,6 +9,8 @@ import About from "./About";
 import Posts from "./posts";
 import Profile from "./profile";
 import NotFound from "./NotFound";
+import Protected from "./Protected";
+
 // import React from "react";
 
 
@@ -23,16 +25,19 @@ function App() {
       <Router>
 
       <ul>
-            <li><NavLink activeStyle={{ color: "green" }} to="/">home</NavLink></li>
-            <li><NavLink activeStyle={{ color: "green" }} to="/about">about</NavLink></li>
-            <li><NavLink activeStyle={{ color: "green" }} to="/posts">posts</NavLink></li>
-            <li><NavLink activeStyle={{ color: "green" }} to="/profile">profile</NavLink></li>
+            <li><NavLink  to="/">home</NavLink></li>
+            <li><NavLink  to="/about">about</NavLink></li>
+            <li><NavLink  to="/posts">posts</NavLink></li>
+            <li><NavLink  to="/profile">profile</NavLink></li>
+            <li><NavLink  to="/Protected">protected</NavLink></li>
+
       </ul>
          
         <Routes>
            <Route path="/" exact element={<Home />} />
            <Route path="/about"  element={<About />} />
            <Route path="/posts"  element={<Posts />} />
+           <Route path="/Protected" element={<Protected/>} />
            <Route path="/profile" element={<Profile />} />
            <Route path="*" element={<NotFound/>} />
          </Routes>

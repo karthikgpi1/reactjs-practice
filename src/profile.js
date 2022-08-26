@@ -7,7 +7,7 @@ function Profile() {
       return (
         <>
            <p>profile page</p>
-           <button onClick={() => { navigate("/home");}}
+           <button onClick={() => { navigate("/");}}
            >change to home page</button>
         </>
     );
