@@ -32,6 +32,8 @@ function App() {
             <li><NavLink  to="/Protected">protected</NavLink></li>
 
       </ul>
+      
+            
          
         <Routes>
            <Route path="/" exact element={<Home />} />
